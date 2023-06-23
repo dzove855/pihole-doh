@@ -1,0 +1,10 @@
+version: "3"
+services:
+  pihole:
+    container_name: pihole
+    image: dzove855/pihole-doh:latest
+    ports:
+      - "80:80"
+      - "8053:8053"
+    privileged: true
+    restart: unless-stopped
