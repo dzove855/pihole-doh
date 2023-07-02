@@ -11,4 +11,5 @@ apt-get purge -y make gcc git wget
 apt-get autoremove -y
 
 touch /etc/s6-overlay/s6-rc.d/user/contents.d/doh
+mkdir /data && mv /etc/pihole /data && ln -sf /data /etc/pihole
 
